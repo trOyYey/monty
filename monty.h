@@ -38,9 +38,9 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
-
 void print_character(stack_t **stack, unsigned int line_n);
 void print_string(stack_t **stack, unsigned int line_n);
 void rotl(stack_t **stack, unsigned int line_n);
